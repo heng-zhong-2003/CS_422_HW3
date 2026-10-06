@@ -10,7 +10,7 @@ The solutions are located in:
 - [1_k/2_imp/lesson_4/exercises/uninitialized-variables/imp.k](./1_k/2_imp/lesson_4/exercises/uninitialized-variables/imp.k)
 
 Directly run the tests in the `tests/` folders using `krun` instead of using
-`make`, the testing of which depends on the output pretty-printing of specific
+`make`, of which the result depends on the output pretty-printing of specific
 K version. For example, my current version prints `.K` instead of `.`, which
 contradicts that of the `xxx.out` files. Test results are also included in the
 comments at the end of each solution `.k` file.
