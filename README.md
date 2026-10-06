@@ -6,8 +6,9 @@ copyright: Copyright (c) Runtime Verification, Inc. All Rights Reserved.
 
 The solutions are located in:
 
-- [1_k/1_lambda/lesson_8/exercises/mu-derived/lambda.k](./1_k/1_lambda/lesson_8/exercises/mu-derived/lambda.k)
-- [1_k/2_imp/lesson_4/exercises/uninitialized-variables/imp.k](./1_k/2_imp/lesson_4/exercises/uninitialized-variables/imp.k)
+- Exercise 1: [1_k/1_lambda/lesson_8/exercises/mu-derived/lambda.k](./1_k/1_lambda/lesson_8/exercises/mu-derived/lambda.k)
+- Exercise 2: [1_k/2_imp/lesson_4/exercises/uninitialized-variables/imp.k](./1_k/2_imp/lesson_4/exercises/uninitialized-variables/imp.k)
+- Exercise 3: [1_k/2_imp/lesson_4/exercises/purely-syntactic/imp.k](./1_k/2_imp/lesson_4/exercises/purely-syntactic/imp.k)
 
 Directly run the tests in the `tests/` folders using `krun` instead of using
 `make`, of which the result depends on the output pretty-printing of specific
