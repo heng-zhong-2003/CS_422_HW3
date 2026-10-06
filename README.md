@@ -2,6 +2,19 @@
 copyright: Copyright (c) Runtime Verification, Inc. All Rights Reserved.
 ---
 
+# Homework 3
+
+The solutions are located in:
+
+- [1_k/1_lambda/lesson_8/exercises/mu-derived/lambda.k](./1_k/1_lambda/lesson_8/exercises/mu-derived/lambda.k)
+- [1_k/2_imp/lesson_4/exercises/uninitialized-variables/imp.k](./1_k/2_imp/lesson_4/exercises/uninitialized-variables/imp.k)
+
+Directly run the tests in the `tests/` folders using `krun` instead of using
+`make`, the testing of which depends on the output pretty-printing of specific
+K version. For example, my current version prints `.K` instead of `.`, which
+contradicts that of the `xxx.out` files. Test results are also included in the
+comments at the end of each solution `.k` file.
+
 # K PL Tutorial
 
 Here you will learn how to use the K tool to define languages by means of a series of screencast movies. It is recommended to do these in the indicated order, because K features already discussed in a previous language definition will likely not be rediscussed in latter definitions. The screencasts follow quite closely the structure of the files under the [tutorial folder](https://github.com/runtimeverification/k/tree/master/k-distribution/pl-tutorial) in the K tool distribution. If you'd rather follow the instructions there and do the tutorial exercises yourself, then go back to https://kframework.org and download the K tool, if you have not done it already. Or, you can first watch the screencasts below and then do the exercises, or do them in parallel.
