@@ -9,6 +9,11 @@ The solutions are located in:
 - Exercise 1: [1_k/1_lambda/lesson_8/exercises/mu-derived/lambda.k](./1_k/1_lambda/lesson_8/exercises/mu-derived/lambda.k)
 - Exercise 2: [1_k/2_imp/lesson_4/exercises/uninitialized-variables/imp.k](./1_k/2_imp/lesson_4/exercises/uninitialized-variables/imp.k)
 - Exercise 3: [1_k/2_imp/lesson_4/exercises/purely-syntactic/imp.k](./1_k/2_imp/lesson_4/exercises/purely-syntactic/imp.k)
+- Exercise 4:
+  + Defining callCC: [1_k/3_lambda++/lesson_1/exercises/callCC/lambda.k](./1_k/3_lambda++/lesson_1/exercises/callCC/lambda.k)
+  + Defining callcc with callCC: [1_k/3_lambda++/lesson_1/exercises/from-call-CC-to-callcc/lambda.k](./1_k/3_lambda++/lesson_1/exercises/from-call-CC-to-callcc/lambda.k)
+  + Defining callCC with callcc: [1_k/3_lambda++/lesson_1/exercises/from-callcc-to-call-CC/lambda.k](./1_k/3_lambda++/lesson_1/exercises/from-callcc-to-call-CC/lambda.k)
+- Exercise 5: [1_k/4_imp++/lesson_7/exercises/imp.k](./1_k/4_imp++/lesson_7/exercises/imp.k)
 
 Directly run the tests in the `tests/` folders using `krun` instead of using
 `make`, of which the result depends on the output pretty-printing of specific
