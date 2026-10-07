@@ -1,4 +1,16 @@
-// Copyright (c) Runtime Verification, Inc. All Rights Reserved.
+/*
+The current "halt;" statement of IMP++ only halts the current thread.
+Define an "abort;" statement which halts the entire program.
+
+abort; must halt every thread so that no pending work can execute, preserving
+output already emitted. halt; must continue to affect only its own thread.
+Tests cover abort at entry, after output, and inside a loop; a child aborting
+its waiting parent; blocked children and siblings; preservation of thread-local
+halt; and an untaken abort. They check the final thread collection as well as
+output. Threads may be removed, have empty computations, or be stopped at a
+terminal abort; marker with an unreachable continuation. No scheduler fairness
+is assumed.
+*/
 
 module IMP-SYNTAX
   imports DOMAINS-SYNTAX
@@ -25,6 +37,7 @@ module IMP-SYNTAX
                  | "int" Ids ";"
                  | "print" "(" AExps ")" ";"
                  | "halt" ";"
+                 | "abort" ";"
                  > "join" AExp ";"            [strict]
 
   syntax Ids   ::= List{Id,","}               [overload(exps)]
@@ -97,6 +110,8 @@ module IMP
   rule print(.AExps); => .K
 
   rule <k> halt; ~> _ => .K </k>
+
+  rule <threads> (<thread>... <k> abort; ...</k> ...</thread> _) => .Bag </threads>
 
   rule <k> spawn S => !T:Int +Int 1 ...</k> <env> Rho </env>
        (.Bag => <thread>... <k> S </k> <env> Rho </env> <id> !T +Int 1 </id> ...</thread>)
